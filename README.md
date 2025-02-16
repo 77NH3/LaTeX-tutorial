@@ -49,7 +49,7 @@ Also we should note that, there are appreciable drawbacks of LaTeX in the
 Also, recently, we get a ambitious new ambitious challenger **Typst**. It is 
 
 ## 2. 如何建立一个 LaTeX 工程 / Setting Up a LaTeX Project  
-### 本地安装与配置（并不推荐）*Local installation and setup (Not recomended)*  
+### 本地安装与配置（进阶使用）*Local installation and setup (Advanced)*  
 
 It is a private and extensive way to set up an environment for LaTeX in your PC. The core of LaTeX is in the distributes of TeX, like MikTeX and TeXLive. With this installed, we need some software to assist you to edit your project, called IDE(Integrated Develping Environment，集成开发环境). The most commonly used one is to use **VS code**. It supports many programming languages. My personal receipt is VS code + MikTeX + LaTeX workshop(a VS code plugin). You may use the links [to be added] as a reference if you are hard core.
 
@@ -168,7 +168,10 @@ to do it. Using the equation environment will use automatic equation numbering. 
 
 To get a formula of the form
 
-$$\begin{aligned}a+b = c\\a+c = d\end{aligned}$$
+$$\begin{aligned}
+a+b = c \\
+a+c = d
+\end{aligned}$$
 
 you should use 
 
