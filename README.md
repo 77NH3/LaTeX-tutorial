@@ -1,31 +1,31 @@
 # LaTeX Tutorial 闪击拉泰克
 
-This is a lecture note prepared for the $\LaTeX$ crash course in 2502 sem by Ethan Quanrun Wu(武一石) in the Academic Team, Physics Society, XMUM. The spirit of this tutorial class is to let everyone learn the essential knowledge that could help physics fresh man use $\LaTeX$ in everyone's daily life. Also, I will introduce my personal suggestions and my workflow as a reference.
+This is a lecture note prepared for the $\LaTeX$ crash course in 2502 sem by Ethan Quanrun Wu(武一石) in the Academic Team, Physics Society, XMUM. The spirit of this tutorial class is to let everyone learn the essential knowledge that could help physics freshman use $\LaTeX$ in everyone's daily life. Also, I will introduce my personal suggestions and my workflow as a reference.
 
 ## 1. LaTeX简介 / Introduction to LaTeX  
 ### LaTeX 的特点与应用场景 *Features and use cases of LaTeX*  
 
-What is $\LaTeX$? **LaTeX** ([/ˈlɑːtɛk/](https://en.wikipedia.org/wiki/Help:IPA/English) [ⓘ](https://en.wikipedia.org/wiki/File:En-us-LaTeX.ogg)[*LAH-tek*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) or [/ˈleɪtɛk/](https://en.wikipedia.org/wiki/Help:IPA/English) [*LAY-tek*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key), often stylized as $\LaTeX$) is a software system for typesetting document. publication. 
+What is $\LaTeX$? **LaTeX** ([/ˈlɑːtɛk/](https://en.wikipedia.org/wiki/Help:IPA/English) [ⓘ](https://en.wikipedia.org/wiki/File:En-us-LaTeX.ogg)[*LAH-tek*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key) or [/ˈleɪtɛk/](https://en.wikipedia.org/wiki/Help:IPA/English) [*LAY-tek*](https://en.wikipedia.org/wiki/Help:Pronunciation_respelling_key), often stylized as $\LaTeX$) is a software system for typesetting documents and publications. 
 
 It could easily produce high-quality, professional-looking documents. 
 
-It is powerful in writing complex math expressions and is widely used in academia for documents. It supplies the most accepted math typing method, which is employed by Microsoft word, markdown, 知乎, etc. 
+It is powerful in writing complex math expressions and is widely used in academia for documents. It supplies the most widely accepted method for typing math math expressions, which is employed by Microsoft word, markdown, 知乎, etc.
 
 Also, it has a vast ecosystem to extend its functionality.
 
-When we are using $\LaTeX$, what we should do is write some code, and then use some interpreter to generate a PDF file, then we could modify the code.实际案例展示（论文、报告、幻灯片等排版效果）  *Show case of practical examples (e.g., academic papers, reports, slides)*  
+When we are using $\LaTeX$, we write code, use an compiler to generate a PDF file, and then modify the code if necessary
 
 ### 实际案例展示（论文、报告、幻灯片等排版效果）  *Show case of practical examples (e.g., academic papers, reports, slides)*  
 
-LaTeX could be used to generate professional looked papers and reports,  and a kind of slides that is useful for academia called *beemer*. It is asked by the famous preprint platform *arXiv* to submit the original tex file of your paper.
+LaTeX can be used to generate professional-looking papers and reports,  and a type of slides that is useful for academia called *beamer*. It is required by the famous preprint platform [arXiv](https://arxiv.org/) to submit the original TeX file of your paper.
 
 You may also use LaTeX to write your CV if you have to.
 
-Another famous advanced application is to use it is provided by the educational youtuber *3 Blue 1 Brown*. You guy may have used his video for your study of linear algebra. The formula part of his video is supported by LaTeX
+Another famous advanced application is to use it is provided by the educational youtuber *3 Blue 1 Brown* ([example](https://www.bilibili.com/video/BV1ys411472E/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d929d65742059d71741b3cc0254da11f)). You guys may have watched his video for your study of linear algebra. The formula part of his video is supported by LaTeX.
 
 ### 为什么选择 LaTeX（对比 Word 或其他工具的优劣）  *Why choose LaTeX? (Comparison with Word and other tools)*  
 
-Then a natural question is: why do we choose $\LaTeX$? The most commonly used text editing software is no doubt Microsoft Word and its equivalents, like Google Docs and WPS Writer. They are obviously more easy to use, and more generally accepted (you should not expect to show off your LaTeX skills in a common company). 
+Then a natural question is: why do we choose $\LaTeX$? The most commonly used text editing software is no doubt Microsoft Word and its equivalents, like Google Docs and WPS Writer. They are obviously easier to use, and more generally accepted (you should not expect to show off your LaTeX skills in a common company). 
 
 | Feature                      | Microsoft Word, Google Docs, WPS Writer      | LaTeX                                                        |
 | ---------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
@@ -44,41 +44,40 @@ Then a natural question is: why do we choose $\LaTeX$? The most commonly used te
 
 The sheet above shows a detailed comparison between Word and its equivalents with LaTeX. But in practice, the reasons we choose LaTeX are simple: its formula-typing is irreplaceable, commonly LaTeX is your only way to type a complex formula; it is widely accepted in academia. Some lecturers would recommend you to submit your report with LaTeX, you could use it for your final year thesis. A more important personal reason is, it could help you to write in the same professional way of the textbooks and papers you've been reading.
 
-Also we should note that, there are appreciable drawbacks of LaTeX in the 
+Also, we should note that there are significant drawbacks of LaTeX in the 
 
-Also, recently, we get a ambitious new ambitious challenger **Typst**. It is 
+Also, recently, we get an ambitious new challenger [Typst](https://typst.app/). It has easier syntax, supports real-time collaboration, has "understandable error feedback", and is determined to replace LaTeX. However, as a new comer, Typst's community is still developing and does not have the sufficient extensive packages like LaTeX. If you've had enough of LaTeX, you might try to play with Typst and keep up with its development.
 
 ## 2. 如何建立一个 LaTeX 工程 / Setting Up a LaTeX Project  
-### 本地安装与配置（进阶使用）*Local installation and setup (Advanced)*  
+### 本地安装与配置（进阶）*Local installation and setup (Advanced)*  
 
-It is a private and extensive way to set up an environment for LaTeX in your PC. The core of LaTeX is in the distributes of TeX, like MikTeX and TeXLive. With this installed, we need some software to assist you to edit your project, called IDE(Integrated Develping Environment，集成开发环境). The most commonly used one is to use **VS code**. It supports many programming languages. My personal receipt is VS code + MikTeX + LaTeX workshop(a VS code plugin). You may use the links [to be added] as a reference if you are hard core.
+It is a private and extensive way to set up an environment for LaTeX in your PC. The core of LaTeX is in the distributes of TeX, like MikTeX and TeXLive. With this installed, we need some software to assist you to edit your project, called IDE(Integrated Development Environment，集成开发环境). The most commonly used one is to use **VS code**. It supports many programming languages. My personal receipt is VS code + MikTeX + LaTeX workshop(a VS code plugin). You may use the links [to be added] as a reference if you are hardcore.
 
 Advantages: 
 
-private, extensive, offline supported
+private, extensive, offline supported, allows multi-person collaborative work
 
-Disadvantage:
+Disadvantages:
 
-Troublesome to setup(especially for beginners), really hard to debug
+Troublesome to set up (especially for beginners), very difficult to debug
 
 ### 在线编辑工具（推荐 Overleaf，步骤演示）  *Online editing tools (recommend Overleaf, step-by-step demo)*  
 
-My personal recommendation, after the through these semesters, is to use the online platform, **Overleaf**. By this you could easily create a basic document.
+My personal recommendation, after these semesters, is to use the online platform, [**Overleaf**](https://overleaf.com/). By this you could easily create a basic document.
 
 ### 快速创建一个简单文档（如生成带标题、段落和公式的文档）  *Quickly creating a basic document (e.g., a title page with paragraphs and equations)*  
 
-Click **New Project**, Click **Example Project**, then you can see a complete example of a LaTeX project, which includes all the daily used features including common contents, math expression, table, picture and reference.
+Click **New Project**. Click **Example Project**, then you can see a complete example of a LaTeX project, which includes all the daily used features including common contents, math expression, table, picture and reference.
 
-To demonstrate it more clearly, I will use a new blank file. You might follow my steps.
+To demonstrate it more clearly, I will use a new blank file.
 
 
 
 ## 3. 常用功能 / Commonly Used Features  
-### 文档格式设置  *Document formatting:*  
 
 ### 段落 *Paragraphs*
 
-You could and common texts between the ```\begin{document}``` and ```\end{document}```. To break a line you have two methods, the first is to break two or more times.
+You could use common texts between the ```\begin{document}``` and ```\end{document}```. To break a line you have two methods, the first is to break two or more times.
 
 The other is to use ```\\```  
 
@@ -168,10 +167,7 @@ to do it. Using the equation environment will use automatic equation numbering. 
 
 To get a formula of the form
 
-$$\begin{aligned}
-a+b = c \\
-a+c = d
-\end{aligned}$$
+$$\begin{aligned}a+b = c\\a+c = d\end{aligned}$$
 
 you should use 
 
@@ -353,7 +349,7 @@ $x = y$, $x \neq z$, $y \leq w$, $w \geq v$, $u \approx t$, $p \in o$
 | **Breve**          | `\breve{}`        | $\breve{x}$        |
 | **Mathring**       | `\mathring{}`     | $\mathring{x}$     |
 | **Wide Hat**       | `\widehat{}`      | $\widehat{x}$      |
-| **Wide Tilde**     | `\widetilde{}`    | $\widetilde{x}\)   |
+| **Wide Tilde**     | `\widetilde{}`    | $\widetilde{xyz}$ |
 
 ### 结合具体例子进行应用  *Practical examples and applications*  
 
@@ -381,11 +377,17 @@ You might provide any equation you like for me as and example to demonstrate. Th
 
 ## 7. 我的工作流/My Work Flow
 
-Here I want to introduce a **lightweight markup language**, or more simply markdown. This can be treated as lightweight software. It basically only has, The interpreter is integrated in VS code.  It use the same set of syntax of math expressions of LaTeX, and abandons its tedious code. 
+Here I want to introduce a **lightweight markup language**, or more simply markdown. This can be treated as lightweight software. It basically only has, The compiler is integrated into VS code.  It uses the same set of syntax of math expressions of LaTeX, and abandons its tedious code. It is also a good tool to take notes when the formula is not too complex(such as math texts. Some physics is too hard for it) 
 
-Commonly, I will use markdown to setup my paper, and transform it into LaTeX by pasting the formula or via tools like {[Pandoc](https://pandoc.org/)}. Then, if I need to do a presentation, I will change the file type to beemer, which shares the advantage that it supports LaTeX recently.
+Commonly, I will use markdown to setup my paper, and transform it into LaTeX by pasting the formula or via tools like [Pandoc](https://pandoc.org/). Then, if I need to do a presentation, I will change the file type to beamer, which shares the advantage that it supports LaTeX recently. To change the file type with Pandoc, you could open the command in the folder and use the code
 
-The essence of my LaTeX life: *\include{\physics}*. It simplifies the code of many useful notations in and beyond physics, $\dv{a}{t}$, $\vb{v}$, $\pdv{U}{x}$, $\dv{a}$, $\pdv{a}$,$\bra{a}$, $\ket{b}$, $\braket{z}{a}$. 
+``` sh
+pandoc -s input.md -o optput.tex
+```
+
+This will provide a standalone TeX file in the current folder. Based on my own painful experience, I recommend using different file names for the input and output files.
+
+The essence of my LaTeX life and : *\include{\physics}*([link](http://mirrors.ctan.org/macros/latex/contrib/physics/physics.pdf)). It simplifies the code of many useful notations in and beyond physics, $\dv{a}{t}$, $\vb{v}$, $\pdv{U}{x}$, $\dv{a}$, $\pdv{a}$,$\bra{a}$, $\ket{b}$, $\braket{z}{a}$. 
 
 ## 8. 后续学习途径 / Further Learning Resources  
 
@@ -396,7 +398,7 @@ As this is an really brief introduction, I cannot and do not intend to tell you 
   - 官方文档、在线速查表、模板库  
     *Official documentation, online cheatsheets, template repositories*  
     
-    Package List [CTAN: Packages](https://ctan.org/pkg)
+    Package List: [CTAN: Packages](https://ctan.org/pkg)
     
     
   
@@ -412,3 +414,6 @@ As this is an really brief introduction, I cannot and do not intend to tell you 
   
   知乎
 
+
+
+[https://overleaf.com/]: 
